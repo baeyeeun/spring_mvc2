@@ -1,5 +1,5 @@
 
-package com.mycompany.myapp.modules.member;
+package com.mycompany.myapp.member;
 
 public class Member {
 	

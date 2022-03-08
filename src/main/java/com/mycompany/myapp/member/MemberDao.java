@@ -1,4 +1,4 @@
-package com.mycompany.myapp.modules.member;
+package com.mycompany.myapp.member;
 
 import java.util.List;
 
