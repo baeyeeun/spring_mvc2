@@ -6,5 +6,5 @@ public class CodeVo {
 	
 	private String ifcdSeq;
 	
-	public String getIfc
+	//public String getIfc
 }

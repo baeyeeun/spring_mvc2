@@ -6,7 +6,7 @@ public class Code {
 	private String IfcgName;
 	private String IfcgDelNy;
 	
-	private String Ifcd
+	
 	
 	public String getIfcgSeq() {
 		return IfcgSeq;
