@@ -17,6 +17,7 @@
 				ifraCode a
 			WHERE 1=1
 				AND a.ifcdDelNy=0 
+				AND ifcgName like concat('%',, #{shIfcgName}, '%')
 	</select>
 		
 	<insert id="insert">
