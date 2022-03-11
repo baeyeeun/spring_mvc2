@@ -1,4 +1,4 @@
-package com.mycompany.myapp;
+package com.junefw.infra;
 
 import java.text.DateFormat;
 import java.util.Date;

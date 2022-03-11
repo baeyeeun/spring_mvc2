@@ -1,4 +1,4 @@
-package com.mycompany.myapp.Code;
+package com.junefw.infra.code;
 
 public class CodeService {
 

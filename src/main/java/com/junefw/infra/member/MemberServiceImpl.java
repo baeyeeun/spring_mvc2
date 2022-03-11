@@ -1,4 +1,4 @@
-package com.mycompany.myapp.member;
+package com.junefw.infra.member;
 
 import java.util.List;
 

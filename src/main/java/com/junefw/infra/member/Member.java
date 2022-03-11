@@ -1,5 +1,5 @@
 
-package com.mycompany.myapp.member;
+package com.junefw.infra.member;
 
 public class Member {
 	
