@@ -14,12 +14,14 @@ public class CodeController {
 	CodeServiceImpl service;
 	
 	@RequestMapping(value = "/code/codeList")
-	public String CodeGroupList(Model model) throws Exception {
+	public String CodeGroupList(CodeVo vo, Model model) throws Exception {
 
-		List<Code> list = service.selectListCode();
+		List<Code> list = service.selectListCode(vo);
+		List<Code> listCodeGruop = service.selectList(vo);		
 		
 		model.addAttribute("list", list);
-
+		model.addAttribute("listCodeGruop", listCodeGruop);
+		
 		return "code/CodeGroupList";
 	}
 	

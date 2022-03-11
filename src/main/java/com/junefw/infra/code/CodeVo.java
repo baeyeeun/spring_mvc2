@@ -7,9 +7,11 @@ public class CodeVo {
 	
 	//infrCodeGruop Search
 	private String shIfcgName;
-	
+	private Integer shIfcgDelNy;
+	private String shIfchSeq;
 	//infrCode
 	private String ifcdSeq;
+
 	
 	
 	public String getIfcgSeq() {
@@ -29,6 +31,18 @@ public class CodeVo {
 	}
 	public void setIfcdSeq(String ifcdSeq) {
 		this.ifcdSeq = ifcdSeq;
+	}
+	public Integer getShIfcgDelNy() {
+		return shIfcgDelNy;
+	}
+	public void setShIfcgDelNy(Integer shIfcgDelNy) {
+		this.shIfcgDelNy = shIfcgDelNy;
+	}
+	public String getShIfchSeq() {
+		return shIfchSeq;
+	}
+	public void setShIfchSeq(String shIfchSeq) {
+		this.shIfchSeq = shIfchSeq;
 	}
 	
 	//public String getIfc

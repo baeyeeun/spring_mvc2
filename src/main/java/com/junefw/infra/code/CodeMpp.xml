@@ -16,8 +16,13 @@
 			FROM
 				ifraCode a
 			WHERE 1=1
+			<choose>
+				<when test="shIfchDelNy == 1"> AND ifcgDelNy = 1</when>
+				<when test="shIfchDelNy == 0"> AND ifcgDelNy = 0</when>
+			</choose>
 				AND a.ifcdDelNy=0 
-				AND ifcgName like concat('%',, #{shIfcgName}, '%')
+				<if test="shIfcgName != and !shIfcgName.equals('')">AND ifcgName like concat('%', #{shIfcgName}, '%')</if>
+				
 	</select>
 		
 	<insert id="insert">
@@ -59,6 +64,7 @@
 				infrCodeGroup a
 			WHERE 1=1
 				AND ifcgDelNy=0 
+				<if test="shIfcgSeq != null and !shIfcgSeq.equals('')">AND IfcgSeq = #{shIfcgSeq}</if>
 	</select>
 		
 	<insert id="insertCode">

@@ -9,6 +9,17 @@
 회원 이름 : <input type="text" name="shIfcgName">
 <input type="submit" name="search">
 
+<select name="shIfcgSeq">
+	<option value=""> ::코드 그룹::
+	<c:forEach items="${listCodeGroup}" var="item" varStatus="status"/>
+	<option value="<c:out value="${item.ifchSeq}";"><c:out value="${item.ifcgName}"/>
+		
+</select>
+
+<input type="submit" name="search">
+
+
+
 	<c:choose>
 		<c:when test="${fn:length(list) eq 0}">
 			<tr>
