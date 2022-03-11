@@ -8,7 +8,7 @@
 
     <resultMap id="resultMapObj" type="com.junefw.infra.modules.code.Code"></resultMap>
 
-	<select id="selectListCode" resultMap="resultMapObj">
+	<select id="selectList" resultMap="resultMapObj">
 			SELECT
 				a.ifcdSeq
 				, a.ifcdName
@@ -19,7 +19,7 @@
 				AND a.ifcdDelNy=0 
 	</select>
 		
-	<insert id="insertCode">
+	<insert id="insert">
 		INSERT INTO infaCode(
 			ifcdName
 			, ifcdDelNy
@@ -29,7 +29,7 @@
 		)
 	</insert>
 
-	<select id="selectOneCode" resultMap="resultMapObj">
+	<select id="selectOne" resultMap="resultMapObj">
 			SELECT
 				a.ifcdSeq
 				, a.ifcdName
@@ -40,7 +40,7 @@
 				AND ifcdSeq = #{ifcdSeq}
 	</select>
 	
-	<update id="updateCode">
+	<update id="update">
 		UPDATE infrCode SET
 			ifcdName = #{ifcdName}
 		WHERE 1=1
@@ -48,7 +48,7 @@
 	</update>
 	
 
-	<!-- infra -->
+	<!-- infr -->
 	<select id="selectListCode" resultMap="resultMapObj">
 			select
 				a.ifcgSeq
