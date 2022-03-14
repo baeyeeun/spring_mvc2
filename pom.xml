@@ -169,7 +169,7 @@
 		</dependency>
 		<!-- mariadb s 2022.02.13 -->	     
 		
-				<!-- mysql, mariadb log s 2022.02.26 -->
+		<!-- mysql, mariadb log s 2022.02.26 -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
