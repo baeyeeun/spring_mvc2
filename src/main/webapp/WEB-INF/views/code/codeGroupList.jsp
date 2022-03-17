@@ -9,7 +9,7 @@
 
 <form id="" name="" method="get" action="/infra/code/codeGroupList">
 
-<select name="shIfcgDelNy">
+<select name="shIfcgDelNy" id="shIfcgDelNy">
 	<option value="">::삭제여부::
 	<option value="1">Y
 	<option value="0">N
@@ -17,13 +17,15 @@
 || 
 회원이름 : <input type="text" name="shIfcgName" id="shIfcgName">
 ||
-<select name="shOption">
+<select name="shOption" id="shOption">
 	<option value="">::검색구분::
 	<option value="1">한글
 	<option value="2">영문
 </select>
+
 <input type="text" name="shValue">
 <input type="submit" id="btnSubmit" name="search">
+
 <br>
 
 <c:choose>
@@ -80,11 +82,16 @@
 
 <script type="text/javascript">
 	$("#btnSubmit").on("click", function(){
-		/* alert($("#shOption").val()); */
+		/* alert($("#shOption").val()); 
 		
 		alert("jquery: " + $("#shIfcgName").val()  );									// jquery 방식
 		alert("javascrip: " +  document.getElementById("shIfcgName").value  );			// javascript 방식
+		*/
 		
+		alert($("shIfchDelNy").val());
+		alert($("shIfchName").val());
+		alert($("shOption").val());
+		alert($("shvalue").val());
 	});
 
 </script>
