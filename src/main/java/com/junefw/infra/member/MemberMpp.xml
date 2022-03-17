@@ -18,15 +18,14 @@
 	</select>
 	
 	<insert id="insert">
-		insesrt into infrMember(
-			ifmmId
-			, ifmmName
-		) values (
-			#{ifmmId}
-			, #{ifmmName}
-			, 0
-		)
-			
-	
+			insert into infrMember (
+				ifmmId
+				,ifmmName
+				,ifmmDelNy
+			) values (
+				#{ifmmId}
+				,#{ifmmName}
+				,0
+			)
 	</insert>
 </mapper>

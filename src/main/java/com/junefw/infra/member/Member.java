@@ -3,6 +3,8 @@ package com.junefw.infra.member;
 
 public class Member {
 	
+//	DTO
+	
 	private String ifmmSeq;
 	private String ifmmId;
 	private String ifmmName;
@@ -32,4 +34,5 @@ public class Member {
 	public void setIfmmDelNy(Integer ifmmDelNy) {
 		this.ifmmDelNy = ifmmDelNy;
 	}
+
 }

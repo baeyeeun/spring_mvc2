@@ -15,15 +15,9 @@ public class MemberServiceImpl implements MemberService{
 	public List<Member> selectList() throws Exception {
 		return dao.selectList(); 
 	}
-
-	public int insert(Member dto) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
+	
 	@Override
-	public int selectList(Member dto) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+	public int insert(Member dto) throws Exception {
+		return dao.insert(dto); 
 	}
 }

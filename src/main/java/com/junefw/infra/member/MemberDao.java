@@ -2,6 +2,7 @@ package com.junefw.infra.member;
 
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 
 import org.apache.ibatis.session.SqlSession;
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Repository;
 public class MemberDao {
 	
 	@Inject
-//	@Resource(name = "sqlSession")
+	@Resource(name = "sqlSession")
 	private SqlSession sqlSession;
 	
 	private static String namespace = "com.junefw.infra.modules.member.MemberMpp";
@@ -23,5 +24,6 @@ public class MemberDao {
 	public int insert(Member dto){ 
 		return sqlSession.insert(namespace + ".insert", dto);
 	}
-
+	
+	
 }

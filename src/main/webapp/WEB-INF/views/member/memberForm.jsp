@@ -5,7 +5,8 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="rb" uri="http://www.springframework.org/tags" %>
 
-<form method="post" action="/member/memberInst">
+
+<form method="post" action="/infra/member/memberInst">
 	<input type="text" name="ifmmId" placeholder="아이디">
 	<input type="text" name="ifmmName" placeholder="이름">
 	<input type="submit" value="제출">

@@ -3,79 +3,68 @@ package com.junefw.infra.code;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import com.junefw.infra.member.Member;
-
+@Service
 public class CodeServiceImpl implements CodeService{
-	
+
 	@Autowired
 	CodeDao dao;
 
+//	infrCodeGroup
+	
 	@Override
-	public List<Code> selectList() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+	public int selectOneCount(CodeVo vo) throws Exception {
+		return dao.selectOneCount(vo);
+	}
+	
+	@Override
+	public List<Code> selectList(CodeVo vo) throws Exception {
+		return dao.selecList(vo);
 	}
 
 	@Override
-	public int insert(Code dao) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+	public int insert(Code dto) throws Exception {
+		return dao.insert(dto);
 	}
 
 	@Override
 	public Code selectOne(CodeVo vo) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.selectOne(vo);
 	}
 
 	@Override
 	public int update(Code dto) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return dao.update(dto);
+	}
+
+	
+//	infrCode
+	
+	
+	@Override
+	public List<Code> selectListCode(CodeVo vo) throws Exception { 
+		return dao.selecListCode(vo);
 	}
 
 	@Override
-	public List<Code> selectListCode(CodeVo vo) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int insertCode(Code dao) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+	public int insertCode(Code dto) throws Exception {
+		return dao.insertCode(dto);
 	}
 
 	@Override
 	public Code selectOneCode(CodeVo vo) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.selectOneCode(vo);
 	}
 
 	@Override
 	public int updateCode(Code dto) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return dao.updateCode(dto);
 	}
 
-	public List<Code> selectList(CodeVo vo) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	@Override
-	public List<Code> selectListCode() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Code> selectListCode(Code dto) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
-
+	
+	
 
 }

@@ -1,34 +1,42 @@
 package com.junefw.infra.code;
 
 public class Code {
-
-	private String IfcgSeq;
-	private String IfcgName;
-	private String IfcgDelNy;
 	
+//	infrCodeGroup
+	private String ifcgSeq;
+	private String ifcgName;
+	private String ifcgNameEng;
+	private Integer ifcgDelNy;
+	
+//	infrCode
 	private String ifcdSeq;
 	private String ifcdName;
 	private String ifcdDelNy;
-	//private String ifcgSeq;
-	
-	
+//	private String ifcgSeq;
+//------------
 	public String getIfcgSeq() {
-		return IfcgSeq;
+		return ifcgSeq;
 	}
 	public void setIfcgSeq(String ifcgSeq) {
-		IfcgSeq = ifcgSeq;
+		this.ifcgSeq = ifcgSeq;
 	}
 	public String getIfcgName() {
-		return IfcgName;
+		return ifcgName;
 	}
 	public void setIfcgName(String ifcgName) {
-		IfcgName = ifcgName;
+		this.ifcgName = ifcgName;
 	}
-	public String getIfcgDelNy() {
-		return IfcgDelNy;
+	public String getIfcgNameEng() {
+		return ifcgNameEng;
 	}
-	public void setIfcgDelNy(String ifcgDelNy) {
-		IfcgDelNy = ifcgDelNy;
+	public void setIfcgNameEng(String ifcgNameEng) {
+		this.ifcgNameEng = ifcgNameEng;
+	}
+	public Integer getIfcgDelNy() {
+		return ifcgDelNy;
+	}
+	public void setIfcgDelNy(Integer ifcgDelNy) {
+		this.ifcgDelNy = ifcgDelNy;
 	}
 	public String getIfcdSeq() {
 		return ifcdSeq;
@@ -48,8 +56,5 @@ public class Code {
 	public void setIfcdDelNy(String ifcdDelNy) {
 		this.ifcdDelNy = ifcdDelNy;
 	}
-	
-	
 
-	
 }
